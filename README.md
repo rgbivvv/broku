@@ -26,15 +26,22 @@ pip install -r requirements.txt
 Usage is as follows:
 
 ```sh
+usage: main.py [-h] [-t TARGET] [-i] [--debug] [-c COMMAND | -s STRING | -y YOUTUBE | -a APP | -l]
+
+A simple Roku CLI tool
+
 options:
   -h, --help            show this help message and exit
   -t, --target TARGET   Target Roku IP
+  -i, --info            Show device info
   --debug               Enable debug logging
   -c, --command COMMAND
                         Send a Roku command
   -s, --string STRING   Type a string on the Roku
   -y, --youtube YOUTUBE
                         Play a YouTube video on Roku
+  -a, --app APP         Launch an app with a particular ID
+  -l, --list_apps       List all apps and their IDs
 ```
 
 For `-c`, you can pass any command as defined in the Roku docs [here](https://developer.roku.com/docs/developer-program/dev-tools/external-control-api.md#keypress-key-values). These commands generally correspond to buttons that you may find on a typical Roku remote.
