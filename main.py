@@ -2,10 +2,10 @@
 import logging
 import argparse
 import ipaddress
-from roku_api.device import get_device_info
-from roku_api.keypress import send_keypress_string, send_command
-from roku_api.youtube import launch_youtube
-from roku_api.ssdp_discover import discover_roku_devices
+from lib.device import get_device_info
+from lib.keypress import send_keypress_string, send_command
+from lib.youtube import launch_youtube
+from lib.ssdp_discover import discover_roku_devices
 
 logger = logging.getLogger(__name__)
 
