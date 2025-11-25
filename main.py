@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!venv/bin/python
 import logging
 import argparse
 import ipaddress
